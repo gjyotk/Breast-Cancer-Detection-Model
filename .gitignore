@@ -1,0 +1,89 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Data files
+*.zip
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.json
+*.xml
+*.db
+*.sqlite3
+
+# Model weights and checkpoints
+*.h5
+*.hdf5
+*.ckpt
+*.pth
+*.pt
+*.tflite
+*.pkl
+*.onnx
+
+# Logs and outputs
+*.log
+logs/
+*.out
+*.err
+
+# TensorBoard
+runs/
+events.out.tfevents.*
+
+# DVC (Data Version Control)
+.dvc/
+*.dvc
+
+# Dataset folders
+/data/
+datasets/
+input/
+output/
+
+# Images and other media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Temporary and cache files
+*.bak
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# IPython history
+.history
+
+# MacOS metadata
+.DS_Store
+
+# Colab
+*.ipynb
