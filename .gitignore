@@ -22,8 +22,6 @@ venv.bak/
 .idea/
 
 # Data files
-*.zip
-*.csv
 *.tsv
 *.xls
 *.xlsx
@@ -56,20 +54,6 @@ events.out.tfevents.*
 .dvc/
 *.dvc
 
-# Dataset folders
-/data/
-datasets/
-input/
-output/
-
-# Images and other media
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
-*.webp
 
 # Temporary and cache files
 *.bak
@@ -84,6 +68,3 @@ Thumbs.db
 
 # MacOS metadata
 .DS_Store
-
-# Colab
-*.ipynb
