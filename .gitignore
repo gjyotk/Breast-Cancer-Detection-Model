@@ -30,16 +30,6 @@ venv.bak/
 *.db
 *.sqlite3
 
-# Model weights and checkpoints
-*.h5
-*.hdf5
-*.ckpt
-*.pth
-*.pt
-*.tflite
-*.pkl
-*.onnx
-
 # Logs and outputs
 *.log
 logs/
