@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Classification Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Breast Cancer Classification in Ultrasound Images </h1>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <h2>Upload Utrasound Image</h2>
+                <div class="upload-area" id="upload-area">
+                    <div class="upload-placeholder" id="upload-placeholder">
+                        <img src="https://cdn-icons-png.flaticon.com/512/126/126477.png" alt="Upload icon" id="upload-icon" height="35px">
+                        <p>Drag & drop your image here or</p>
+                        <label for="file-input" class="upload-btn">Browse Files</label>
+                        <input type="file" id="file-input" accept="image/*" hidden>
+                    </div>
+                    <div class="preview-container" id="image-preview" style="display: none;">
+                        <img id="preview-img" src="" alt="Image preview">
+                        <button id="remove-btn" class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <button id="analyze-btn" class="analyze-btn" disabled>Analyze Image</button>
+            </section>
+
+            <section class="results-section" id="results-section" style="display: none;">
+                <h2>Analysis Results</h2>
+                <div class="results-container">
+                    <div class="result-box">
+                        <h3>Original Image</h3>
+                        <div class="image-container">
+                            <img id="original-image" src="" alt="Original mammogram">
+                        </div>
+                    </div>
+                    <div class="result-box">
+                        <h3>Segmentation Result</h3>
+                        <div class="image-container">
+                            <img id="segmentation-image" src="" alt="Segmentation result">
+                        </div>
+                    </div>
+                    <div class="result-box classification-box">
+                        <h3>Classification</h3>
+                        <div class="classification-result" id="classification-result">
+                            <div class="diagnosis-label">Diagnosis:</div>
+                            <div class="diagnosis-value" id="diagnosis-value">-</div>
+                            <div class="confidence">
+                                <span>Confidence:</span>
+                                <div class="confidence-bar-container">
+                                    <div class="confidence-bar" id="confidence-bar"></div>
+                                </div>
+                                <span id="confidence-value">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="data-viz-section">
+                <h2>Project Insights</h2>
+                <div class="viz-container">
+                    <div class="viz-box">
+                        <h3>Dataset Insights</h3>
+                        <div class="image-gallery">
+                            <div class="set1">
+                            <div class="insight-image">
+                                <img id="dataset-image-1" src="assets/data-preview1.png" alt="Dataset visualization 1" height="280px">
+                            </div>
+                            <div class="insight-image">
+                                <img id="dataset-image-2" src="assets/data-preview2.png" alt="Dataset visualization 2" height="280px">
+                            </div>
+                        </div>
+                        <div class="set2">
+                            <div class="insight-image">
+                                <img id="dataset-image-2" src="assets/dataset-corr.png" alt="Dataset visualization 2" height="280px">
+                            </div>
+                            <div class="insight-image">
+                                <img id="dataset-image-3" src="assets/birads-distribution.png" alt="Dataset visualization 3" height="280px">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="viz-box">
+                        <h3>Model Insights</h3>
+                        <div class="image-gallery">
+                            <div class="insight-image">
+                                <img id="model-image-1" src="assets/seg1.png" alt="Model visualization 1" height="280px">
+                            </div>
+                            <div class="insight-image">
+                                <img id="model-image-1" src="assets/seg2.png" alt="Model visualization 1" height="280px">
+                            </div>
+                            <div class="insight-image">
+                                <img id="model-image-1" src="assets/seg3.png" alt="Model visualization 1" height="280px">
+                            </div>
+                            <div class="insight-image">
+                                <img id="model-image-2" src="assets/results/u-net-score.png" alt="Model visualization 2" height="100px">
+                            </div>
+                            <div class="set3">
+                            <div class="insight-image">
+                                <img id="model-image-2" src="assets/results/true-false-positive-rate.png" alt="Model visualization 2" height="260px">
+                            </div>
+                            <div class="insight-image">
+                                <img id="model-image-3" src="assets/results/training-and-validation-loss.png" alt="Model visualization 3" height="260px">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made by Gurjot Kaur. <a href="https://github.com/gjyotk" style="color:rgb(207, 216, 246);">Github</a></p>
+        </footer>
+    </div>
+
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="spinner"></div>
+        <p>Analyzing image...</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
