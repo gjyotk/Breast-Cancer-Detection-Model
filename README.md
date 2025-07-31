@@ -110,12 +110,13 @@ A lightweight web interface allows users to upload a single ultrasound image and
 
 ## Results and Visualisations
 
-<img width="4807" height="2765" alt="data-preview2" src="https://github.com/user-attachments/assets/15171b99-6e0c-457c-b91b-3cb9d5b366a3" />
+<img width="1207" height="1565" alt="data-preview2" src="https://github.com/user-attachments/assets/15171b99-6e0c-457c-b91b-3cb9d5b366a3" /></br>
 
+<img width="910" height="329" alt="seg1" src="https://github.com/user-attachments/assets/d42e44cc-5a0b-4ea4-8836-044978ab4378" /></br>
 
-<img width="910" height="329" alt="seg1" src="https://github.com/user-attachments/assets/d42e44cc-5a0b-4ea4-8836-044978ab4378" />
+<img width="474" height="505" alt="training-and-validation-loss" src="https://github.com/user-attachments/assets/3c4478c5-151c-4a4a-bc69-3224a07ba9b4" /> </br>
 
-<img width="474" height="505" alt="training-and-validation-loss" src="https://github.com/user-attachments/assets/3c4478c5-151c-4a4a-bc69-3224a07ba9b4" />
+<img width="978" height="674" alt="Screenshot 2025-05-07 at 12 53 22 AM" src="https://github.com/user-attachments/assets/d64663a4-bcb1-4e0f-911e-142a23befba8" />
 
 
 ## Future Work
